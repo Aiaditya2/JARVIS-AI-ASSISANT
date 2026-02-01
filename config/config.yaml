@@ -1,0 +1,34 @@
+# JARVIS Configuration File
+
+# Language Settings
+language:
+  code: "hi-IN"  # hi-IN for Hindi, en-US for English
+  tts_language: "hi"  # hi for Hindi, en for English
+
+# LLM Settings
+llm:
+  backend: "ollama"  # Options: ollama, transformers, llama_cpp
+  model_name: "llama3.2:1b"  # Model identifier
+  max_tokens: 150
+  temperature: 0.7
+  
+  # Recommended models for low RAM:
+  # Ollama: llama3.2:1b, phi3:mini, gemma2:2b
+  # Transformers: microsoft/Phi-3-mini-4k-instruct (with 8-bit quantization)
+  # llama.cpp: Use Q4_K_M or Q5_K_M quantized GGUF models
+
+# Voice Settings
+voice:
+  timeout: 5  # seconds
+  phrase_time_limit: 10  # seconds
+  continuous_listening: false
+
+# Android Settings
+android:
+  use_kivy: true
+  use_adb: false
+
+# Logging
+logging:
+  level: "INFO"  # DEBUG, INFO, WARNING, ERROR
+  file: "jarvis.log"

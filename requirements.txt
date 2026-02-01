@@ -1,0 +1,29 @@
+# Core Dependencies
+speechrecognition>=3.10.0
+pyttsx3>=2.90
+pyaudio>=0.2.11
+
+# LLM Backends (choose based on your preference)
+# Option 1: Ollama (Recommended for low RAM)
+ollama>=0.1.0
+
+# Option 2: Transformers (for quantized models)
+# transformers>=4.35.0
+# torch>=2.1.0
+# accelerate>=0.24.0
+# bitsandbytes>=0.41.0  # For 8-bit quantization
+
+# Option 3: llama.cpp (Most efficient for low RAM)
+# llama-cpp-python>=0.2.0
+
+# Android Support
+kivy>=2.2.0
+pyjnius>=1.4.2  # For Android Java integration
+
+# Utilities
+pyyaml>=6.0.1
+python-dotenv>=1.0.0
+
+# Optional: For better Hindi TTS
+# gTTS>=2.4.0  # Google Text-to-Speech (requires internet)
+# indic-transliteration>=1.5.0  # For Hindi text processing
